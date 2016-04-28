@@ -1,0 +1,243 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE rdf:RDF [
+	 <!ENTITY rdf 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+	 <!ENTITY a 'http://protege.stanford.edu/system#'>
+	 <!ENTITY kb 'http://protege.stanford.edu/kb#'>
+	 <!ENTITY rdfs 'http://www.w3.org/2000/01/rdf-schema#'>
+]>
+<rdf:RDF xmlns:rdf="&rdf;"
+	 xmlns:a="&a;"
+	 xmlns:kb="&kb;"
+	 xmlns:rdfs="&rdfs;">
+<rdfs:Class rdf:about="&kb;Car"
+	 rdfs:label="Car">
+	<rdfs:subClassOf rdf:resource="&rdfs;Resource"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;City"
+	 rdfs:label="City">
+	<rdfs:subClassOf rdf:resource="&rdfs;Resource"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;DateDTP"
+	 rdfs:label="DateDTP">
+	<rdfs:subClassOf rdf:resource="&rdfs;Resource"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;Human"
+	 rdfs:label="Human">
+	<rdfs:subClassOf rdf:resource="&rdfs;Resource"/>
+</rdfs:Class>
+<rdf:Property rdf:about="&kb;KBM0"
+	 a:maxCardinality="1"
+	 a:maxValue="13"
+	 a:minValue="-1"
+	 a:range="integer"
+	 rdfs:label="KBM0">
+	<rdfs:domain rdf:resource="&kb;KoefKBM"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;KBM1"
+	 a:maxCardinality="1"
+	 a:maxValue="13"
+	 a:minValue="-1"
+	 a:range="integer"
+	 rdfs:label="KBM1">
+	<rdfs:domain rdf:resource="&kb;KoefKBM"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;KBM2"
+	 a:maxCardinality="1"
+	 a:maxValue="13"
+	 a:minValue="-1"
+	 a:range="integer"
+	 rdfs:label="KBM2">
+	<rdfs:domain rdf:resource="&kb;KoefKBM"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;KBM3"
+	 a:maxCardinality="1"
+	 a:maxValue="13"
+	 a:minValue="-1"
+	 a:range="integer"
+	 rdfs:label="KBM3">
+	<rdfs:domain rdf:resource="&kb;KoefKBM"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;KBM4"
+	 a:maxCardinality="1"
+	 a:maxValue="13"
+	 a:minValue="-1"
+	 a:range="integer"
+	 rdfs:label="KBM4">
+	<rdfs:domain rdf:resource="&kb;KoefKBM"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;Koeef"
+	 a:maxCardinality="1"
+	 a:maxValue="10.0"
+	 a:minValue="0.0010"
+	 a:range="float"
+	 rdfs:label="Koeef">
+	<rdfs:domain rdf:resource="&kb;City"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdfs:Class rdf:about="&kb;Koeefis"
+	 rdfs:label="Koeefis">
+	<rdfs:subClassOf rdf:resource="&rdfs;Resource"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;KoefChanceDTP"
+	 rdfs:label="KoefChanceDTP">
+	<rdfs:subClassOf rdf:resource="&kb;Koeefis"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;KoefKBM"
+	 rdfs:label="KoefKBM">
+	<rdfs:subClassOf rdf:resource="&kb;Koeefis"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;KoefKM"
+	 rdfs:label="KoefKM">
+	<rdfs:subClassOf rdf:resource="&kb;Koeefis"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;KoefKS"
+	 rdfs:label="KoefKS">
+	<rdfs:subClassOf rdf:resource="&kb;Koeefis"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;KoefKVS"
+	 rdfs:label="KoefKVS">
+	<rdfs:subClassOf rdf:resource="&kb;Koeefis"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&kb;StrahCompany"
+	 rdfs:label="StrahCompany">
+	<rdfs:subClassOf rdf:resource="&rdfs;Resource"/>
+</rdfs:Class>
+<rdf:Property rdf:about="&kb;ageKoef"
+	 a:maxCardinality="1"
+	 a:range="integer"
+	 rdfs:label="ageKoef">
+	<rdfs:domain rdf:resource="&kb;KoefChanceDTP"/>
+	<rdfs:domain rdf:resource="&kb;KoefKVS"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;basisStavka"
+	 a:maxCardinality="1"
+	 a:maxValue="10000"
+	 a:minValue="1"
+	 a:range="integer"
+	 rdfs:label="basisStavka">
+	<rdfs:domain rdf:resource="&kb;StrahCompany"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;cityName"
+	 a:maxCardinality="1"
+	 rdfs:label="cityName">
+	<rdfs:domain rdf:resource="&kb;City"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;companyName"
+	 a:maxCardinality="1"
+	 rdfs:label="companyName">
+	<rdfs:domain rdf:resource="&kb;StrahCompany"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;dTP"
+	 rdfs:label="dTP">
+	<rdfs:range rdf:resource="&kb;DateDTP"/>
+	<rdfs:domain rdf:resource="&kb;Human"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;date"
+	 a:maxCardinality="1"
+	 rdfs:label="date">
+	<rdfs:domain rdf:resource="&kb;DateDTP"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;humanName"
+	 a:maxCardinality="1"
+	 rdfs:label="humanName">
+	<rdfs:domain rdf:resource="&kb;Human"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;klassKBM"
+	 a:maxCardinality="1"
+	 a:maxValue="13"
+	 a:minValue="-1"
+	 a:range="integer"
+	 rdfs:label="klassKBM">
+	<rdfs:domain rdf:resource="&kb;KoefKBM"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;klassKS"
+	 a:maxCardinality="1"
+	 a:range="integer"
+	 rdfs:label="klassKS">
+	<rdfs:domain rdf:resource="&kb;KoefKS"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;marka"
+	 a:maxCardinality="1"
+	 rdfs:label="marka">
+	<rdfs:domain rdf:resource="&kb;Car"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;model"
+	 a:maxCardinality="1"
+	 rdfs:label="model">
+	<rdfs:domain rdf:resource="&kb;Car"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;myCity"
+	 a:maxCardinality="1"
+	 rdfs:label="myCity">
+	<rdfs:range rdf:resource="&kb;City"/>
+	<rdfs:domain rdf:resource="&kb;Human"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;my_Car"
+	 a:maxCardinality="1"
+	 rdfs:label="my_Car">
+	<rdfs:range rdf:resource="&kb;Car"/>
+	<rdfs:domain rdf:resource="&kb;Human"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;power"
+	 a:maxCardinality="1"
+	 a:maxValue="1000"
+	 a:minValue="1"
+	 a:range="integer"
+	 rdfs:label="power">
+	<rdfs:domain rdf:resource="&kb;Car"/>
+	<rdfs:domain rdf:resource="&kb;KoefKM"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;stajKoef"
+	 a:maxCardinality="1"
+	 a:range="integer"
+	 rdfs:label="stajKoef">
+	<rdfs:domain rdf:resource="&kb;KoefChanceDTP"/>
+	<rdfs:domain rdf:resource="&kb;KoefKVS"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;stajStartyear"
+	 a:maxCardinality="1"
+	 a:maxValue="2016"
+	 a:minValue="1960"
+	 a:range="integer"
+	 rdfs:label="stajStartyear">
+	<rdfs:domain rdf:resource="&kb;Human"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;value"
+	 a:maxCardinality="1"
+	 a:range="float"
+	 rdfs:label="value">
+	<rdfs:domain rdf:resource="&kb;KoefChanceDTP"/>
+	<rdfs:domain rdf:resource="&kb;KoefKBM"/>
+	<rdfs:domain rdf:resource="&kb;KoefKM"/>
+	<rdfs:domain rdf:resource="&kb;KoefKS"/>
+	<rdfs:domain rdf:resource="&kb;KoefKVS"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;yearBithday"
+	 a:maxCardinality="1"
+	 a:maxValue="2010"
+	 a:minValue="1950"
+	 a:range="integer"
+	 rdfs:label="yearBithday">
+	<rdfs:domain rdf:resource="&kb;Human"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+</rdf:RDF>

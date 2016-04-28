@@ -1,0 +1,18 @@
+2016.04.11 22:51:51.463 MSK INFO: *** SYSTEM START ***
+2016.04.11 22:51:51.734 MSK WARNING: no such class: edu.stanford.smi.protegex.storage.rdf.configurable.RDFCBackend -- SystemUtilities.newInstance()
+2016.04.11 22:51:51.735 MSK SEVERE: Cannot find knowledgebase factory: edu.stanford.smi.protegex.storage.rdf.configurable.RDFCBackend
+Please check that you have the required plug-in. -- Project.createDomainKB()
+2016.04.12 11:02:38.190 MSK INFO: *** SYSTEM START ***
+2016.04.18 14:09:56.931 MSK INFO: *** SYSTEM START ***
+2016.04.18 14:10:57.378 MSK INFO: *** SYSTEM START ***
+2016.04.18 14:12:47.071 MSK INFO: *** SYSTEM START ***
+2016.04.18 14:13:41.371 MSK INFO: *** SYSTEM START ***
+2016.04.18 14:14:36.414 MSK INFO: *** SYSTEM START ***
+2016.04.18 14:15:27.058 MSK INFO: *** SYSTEM START ***
+2016.04.18 14:18:06.537 MSK INFO: *** SYSTEM START ***
+2016.04.18 14:20:01.791 MSK INFO: *** SYSTEM START ***
+2016.04.18 14:22:09.650 MSK INFO: *** SYSTEM START ***
+2016.04.18 14:26:08.703 MSK INFO: *** SYSTEM START ***
+2016.04.18 14:29:00.532 MSK INFO: *** SYSTEM START ***
+2016.04.18 14:30:09.706 MSK INFO: *** SYSTEM START ***
+2016.04.18 14:31:19.443 MSK INFO: *** SYSTEM START ***
